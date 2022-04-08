@@ -64,6 +64,13 @@ body {
   font-family: 'Hurricane', cursive;
   margin-left: 0%;
   font-size: 20px;
+  animation-name: bounceIn;
+  animation-duration: 1800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+ 
 }
 
 .vinculos {
@@ -257,8 +264,15 @@ body {
 }
 /* aca empieza la mediua querie de web */
 @media (min-width: 48em) {
-  .titulo {
+  .titulo { 
     font-size: 60px;
+    animation-name: bounceIn;
+  animation-duration: 1800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
   }
   .titulofooter {
     color: white;
@@ -283,3 +297,22 @@ body {
     display: none;
   }
 }
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+

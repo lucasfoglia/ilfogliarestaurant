@@ -70,7 +70,7 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 2s;
   animation-iteration-count: infinite;
- 
+
 }
 
 .vinculos {
@@ -82,6 +82,7 @@ body {
   color: white;
   font-size: 10px;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -99,6 +100,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .margenformulario {
   margin: 15px;
 }
@@ -134,6 +136,7 @@ body {
   max-height: 35rem;
   margin: 2rem;
 }
+
 .displaycongrid {
   display: grid;
   grid-template-rows: repeat(3, 0.2fr);
@@ -142,6 +145,7 @@ body {
   height: 100%;
   align-content: space-between;
 }
+
 .displaycongridgaleria {
   display: grid;
   grid-template-rows: repeat(3, 0.2fr);
@@ -237,82 +241,94 @@ body {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
 .redsocial {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
+  margin-right: 2px;
 }
+
 /* aca empieza la mediua querie de web */
 @media (min-width: 48em) {
-  .titulo { 
+  .titulo {
     font-size: 60px;
     animation-name: bounceIn;
-  animation-duration: 1800ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-
+    animation-duration: 2300ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-iteration-count: 3s;
+    font-family: 'Hurricane', cursive;
   }
+
   .titulofooter {
     color: white;
     font-size: 20px;
   }
+
   .redsocial {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
   }
+
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 20px 30px;
   }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }
 }
-@keyframes bounceIn{
-  0%{
+
+@keyframes bounceIn {
+  0% {
     opacity: 0;
-    transform: scale(0.3) translate3d(0,0,0);
+    transform: scale(0.3) translate3d(0, 0, 0);
   }
-  50%{
+
+  50% {
     opacity: 0.9;
     transform: scale(1.1);
   }
-  80%{
+
+  80% {
     opacity: 1;
     transform: scale(0.89);
   }
-  100%{
+
+  100% {
     opacity: 1;
-    transform: scale(1) translate3d(0,0,0);
+    transform: scale(1) translate3d(0, 0, 0);
   }
 }
-

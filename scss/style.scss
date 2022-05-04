@@ -31,7 +31,9 @@ body {
 
 .footer {
   @extend .flex-space-between;
-  @include margin-x(20px, 20px) .titulofooter {
+  @include margin-x(20px, 20px);
+  
+  .titulofooter {
     color: white;
     font-size: 10px;
   }

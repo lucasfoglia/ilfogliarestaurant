@@ -31,9 +31,7 @@ body {
 
 .footer {
   @extend .flex-space-between;
-  @include margin-x(20px,20px )
-
-  .titulofooter {
+  @include margin-x(20px, 20px) .titulofooter {
     color: white;
     font-size: 10px;
   }
@@ -292,7 +290,7 @@ $redes: (
 .redsocial {
   width: 10px;
   height: 10px;
-  @include margin-x(0px , 2px )
+  @include margin-x(0px, 2px);
 }
 
 /* aca empieza la mediua querie de web */
@@ -316,7 +314,7 @@ $redes: (
   .redsocial {
     width: 30px;
     height: 30px;
-    @include margin-x(0px,5px);
+    @include margin-x(0px, 5px);
   }
 
   .header {

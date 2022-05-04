@@ -8,14 +8,23 @@ body {
   font-size: 20px;
   height: 100vh; }
 
-.header {
+.flex-space-between, .header, .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; }
+
+.header {
   padding: 10px 10px;
   border-bottom: 1px solid;
   color: white;
   z-index: 3; }
+
+.footer {
+  margin-left: 20px;
+  margin-right: 20px; }
+  .footer .titulofooter {
+    color: white;
+    font-size: 10px; }
 
 .imagendefondo {
   z-index: -1;
@@ -52,7 +61,7 @@ body {
 .titulo {
   display: inline-block;
   color: white;
-  font-family: 'Hurricane', cursive;
+  font-family: "Hurricane", cursive;
   margin-left: 0%;
   font-size: 20px;
   animation-name: bounceIn;
@@ -67,16 +76,6 @@ body {
   color: white; }
   .vinculos:hover {
     text-decoration: underline; }
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
-  align-items: center; }
-  .footer .titulofooter {
-    color: white;
-    font-size: 10px; }
 
 .formulariodecontacto {
   color: white;
@@ -99,7 +98,7 @@ body {
 
 .textohistoria {
   display: flex;
-  color: white;
+  color: #ffffff;
   font-size: 1rem;
   margin: 2rem; }
 
@@ -204,9 +203,19 @@ body {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0; }
 
+.btn--twitter {
+  background-color: #000000; }
+
+.btn--facebook {
+  background-color: #252629; }
+
+.btn--instagram {
+  background-color: #111010; }
+
 .redsocial {
   width: 10px;
   height: 10px;
+  margin-left: 0px;
   margin-right: 2px; }
 
 /* aca empieza la mediua querie de web */
@@ -219,13 +228,14 @@ body {
     animation-fill-mode: forwards;
     animation-delay: 3s;
     animation-iteration-count: 3s;
-    font-family: 'Hurricane', cursive; }
+    font-family: "Hurricane", cursive; }
   .titulofooter {
     color: white;
     font-size: 20px; }
   .redsocial {
     width: 30px;
     height: 30px;
+    margin-left: 0px;
     margin-right: 5px; }
   .header li {
     float: left; }
